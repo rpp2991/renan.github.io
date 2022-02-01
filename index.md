@@ -1,37 +1,421 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="pt-br">
 
-You can use the [editor on GitHub](https://github.com/rpp2991/renan.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Netflix Clone</title>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
 
-### Markdown
+    <!--Cabeçalho-->
+    <header class="cabecalho" id="idCabecalho">
+        <div class="container">
+            <figure class="cabecalho_logo">
+                <img src="./assets/img/logo-youflix.png" alt="Logo Youflix">
+                <figcaption>Logo da Youflix</figcaption>
+            </figure>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            <!--Menu de Navegação-->
+            <nav class="cabecalho_menu">
 
-```markdown
-Syntax highlighted code block
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Séries</a>
+                    </li>
+                    <li>
+                        <a href="#">Filmes</a>
+                    </li>
+                    <li>
+                        <a href="#">Bombando</a>
+                    </li>
+                    <li>
+                        <a href="#">Minha Lista</a>
+                    </li>
+                    <li>
+                        <a href="#">Assistir Novamente</a>
+                    </li>
+                </ul>
 
-# Header 1
-## Header 2
-### Header 3
+            </nav>
 
-- Bulleted
-- List
+            <div class="cabecalho_menuConfiguracao">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/pesquisa.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">INFANTIL</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/presente.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/notificacao.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/ProfileIMG.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </header>
 
-1. Numbered
-2. List
+    <main>
 
-**Bold** and _Italic_ and `Code` text
+        <!-- SEÇÃO DESTAQUE -->
+        <section class="secaoDestaque">
 
-[Link](url) and ![Image](src)
-```
+            <div class="container">
+                <!-- IMAGEM DESTAQUE -->
+                <figure class="secaoDestaque_imagemDestaque">
+                    <img src="./assets/img/pokemon.jpg" alt="Pokémon Destaques">
+                    <figcaption>Pokémon Jornadas</figcaption>
+                </figure>
+                <!-- CONTEÚDO DESTAQUE -->
+                <article class="secaoDestaque_descricao">
+                    <h1><img src="./assets/img/logo_destaque.png" alt="Pokémon Jornadas"></h1>
+                    <p>Com Ash mais determinado do que nunca a se tornar um Mestre Pokémon e Goh com o objetivo de
+                        capturar um
+                        de cada Pokémon (incluindo Mew), nossos heróis encaram muitos desafios e emoções enquanto
+                        exploram esse
+                        vasto universo.</p>
+                </article>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+                <!-- LINKS DE NAVEGAÇÃO -->
+                <div class="secaoDestaque_navegacaoDestaque">
+                    <a href="#"><img src="./assets/img/assistir.png" alt="Icon play">Assistir</a>
+                    <a href="#" class="secaoDestaque_navegacaoDestaque--transparente"><img src="./assets/img/info.png"
+                            alt="Icon play">Mais informações</a>
+                </div>
+            </div>
+        </section>
 
-### Jekyll Themes
+        <!--Filmes em Alta-->
+        <section class="secaoFilmes">
+            <div class="container">
+                <h2>Em alta</h2>
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <img src="./assets/img/drstrange.jpg" alt="Dr. Estranho">
+                        <figcaption></figcaption>
+                    </li>
+                    <li>
+                        <img src="./assets/img/demolidor.jpg" alt="Demolidor">
+                    </li>
+                    <li><img src="./assets/img/pulp.jpg" alt="Pulp Fiction">
+                        <figcaption></figcaption>
+                    </li>
+                    <li>
+                        <img src="./assets/img/spiderman.jpg" alt="Homem-Aranha de Volta para a Casa">
+                        <figcaption></figcaption>
+                    </li>
+                    <li>
+                        <img src="./assets/img/friends.jpg" alt="Friends">
+                        <figcaption></figcaption>
+                    </li>
+                    <li>
+                        <img src="./assets/img/howimet.jpg" alt="How i Met Your Mother">
+                        <figcaption></figcaption>
+                    </li>
+                    <li>
+                        <img src="./assets/img/theoffice.jpg" alt="The Office">
+                        <figcaption></figcaption>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rpp2991/renan.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <!--Continuar assistindo-->
+        <section class="secaoFilmes secaoFilmes--progressoFilmes">
+            <div class="container">
+                <h2>Continuar Assistindo</h2>
+                <!--Lista de Filmes-->
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/strangerthings.jpg" alt="Stranger Things">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/letra.jpg" alt="Letra e Música">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/ummaluco.jpg" alt="Um Maluco no Pedaço">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/arrow.jpg" alt="Arrow">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/backtothe.jpg" alt="De Volta para o Futuro">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/breakingbad.jpg" alt="Breaking Bad">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Só na Youflix!-->
+        <section class="secaoFilmes secaoFilmes--progressoFilmes">
+            <div class="container">
+                <h2>Só na Youflix</h2>
+                <!--Lista de Filmes-->
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/1.jpg" alt="1">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/2.jpg" alt="2">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/3.jpg" alt="3">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/4.jpg" alt="4">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/5.png" alt="5">
+                            <figcaption></figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        <section class="secaoFilmes">
+            <div class="container">
+                <!--TÍTULO DA SEÇÃO-->
+                <h2>Minha Lista</h2>
+
+                <!--LISTA DE FILMES-->
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="/assets/img/beber.jpg" alt="Hangover">
+                            <figcaption>Hangover</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/assets/img/culpa.jpg" alt="A Culpa é das Estrelas">
+                            <figcaption>A Culpa é das Estrelas</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="/assets/img/batman.jpg" alt="Batman">
+                            <figcaption>Batman</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secaoFilmes">
+            <div class="container">
+                <!--TÍTULO DA SEÇÃO"-->
+                <h2>Top 10 no Brasil hoje</h2>
+
+                <!-- LISTA DE FILMES -->
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/rank1.png" alt="Filme 1">
+                            <figcaption>Filme 1</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/rank2.png" alt="Filme 1">
+                            <figcaption>Filme 1</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/rank3.png" alt="Filme 1">
+                            <figcaption>Filme 1</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/rank4.png" alt="Filme 1">
+                            <figcaption>Filme 1</figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="secaoFilmes">
+
+            <div class="container">
+                <!-- TÍTULO DA SEÇÃO -->
+                <h2>Minha lista</h2>
+
+                <!-- LISTA DE FILMES -->
+                <ul class="secaoFilmes_listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/bojack.jpg" alt="Bojack">
+                            <figcaption>Bojack</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/family.jpg" alt="Family Guy">
+                            <figcaption>Fg</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/american.jpg" alt="American Dad">
+                            <figcaption>American Dad</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/click.jpg" alt="Click">
+                            <figcaption>Click</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/jessica.jpg" alt="JJONES">
+                            <figcaption>Jessica Jones</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/narcos.jpg" alt="Narcos">
+                            <figcaption>Narcos</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <div class="container">
+            <!--Redes Sociais-->
+            <div class="rodape_midiasSociais">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/youtube.png" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="rodape_menuNavegacao">
+                <ul>
+                    <li> <a href="#">Idioma e Legendas</a>
+                    </li>
+                    <li> <a href="#">Imprensa</a>
+                    </li>
+                    <li> <a href="#">Privacidade</a>
+                    </li>
+                    <li> <a href="#">Entre em Contato</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#">Audiodescrição</a>
+                </li>
+                <li>
+                    <a href="#">Relações com investidores</a>
+                </li>
+                <li>
+                    <a href="#">Avisos legais</a>
+                </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Centro de ajuda</a>
+                    </li>
+                    <li>
+                        <a href="#">Carreiras</a>
+                    </li>
+                    <li>
+                        <a href="#">Preferências de cookies</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Cartão pré-pago</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de uso</a>
+                    </li>
+                    <li>
+                        <a href="#">Informações corporativas</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#" class="rodape_link">Código do Serviço</a>
+            <p>© 2021 - Youflix, Inc. Desenvolvido por Renan Pires. Projeto desenvolvido para estudo na trilha Kenzie
+                com o Projeto Kenzieflix.</p>
+    </footer>
+</body>
+
+</html>
